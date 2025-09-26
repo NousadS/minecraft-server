@@ -1,7 +1,7 @@
 import typing
 from flask import Flask, jsonify, render_template, request
 
-import functions
+from . import functions
 
 app = Flask(__name__)
 
