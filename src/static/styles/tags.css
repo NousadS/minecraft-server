@@ -1,0 +1,72 @@
+.tag {
+    --tag-color: var(--text);
+    --tag-color-rgb: var(--text-rgb);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 2dvw;
+    height: 1em;
+
+    padding: 1% 4%;
+
+    border: var(--border-style);
+    border-color: var(--tag-color);
+    border-radius: 0.5dvw;
+
+    color: var(--tag-color);
+    background: rgb(var(--tag-color-rgb), 0.2);
+
+    font-weight: normal;
+
+    cursor: default;
+    user-select: none;
+
+    transition:
+        background 0.5s ease,
+        width 0.2s ease,
+        transform 0.2s ease;
+}
+
+.tag .icon {
+    color: var(--tag-color);
+
+    transition: width 0.1s ease;
+}
+
+.tag img.icon {
+    height: 90%;
+    aspect-ratio: 1 / 1;
+
+    margin-right: 2%;
+
+    overflow: visible;
+}
+
+.tag i.icon {
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+
+/* Colors */
+
+.tag.red {
+    --tag-color: var(--red);
+    --tag-color-rgb: var(--red-rgb);
+}
+
+.tag.yellow {
+    --tag-color: var(--yellow);
+    --tag-color-rgb: var(--yellow-rgb);
+}
+
+.tag.green {
+    --tag-color: var(--green);
+    --tag-color-rgb: var(--green-rgb);
+}
+
+.tag.blue {
+    --tag-color: var(--blue);
+    --tag-color-rgb: var(--blue-rgb);
+}

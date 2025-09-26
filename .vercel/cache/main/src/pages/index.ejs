@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/static/styles/base.css">
+        <link rel="stylesheet" href="/static/styles/index.css">
+
+        <title>Server Keeper</title>
+    </head>
+    <body>
+        <div class="menu">
+            <a href="#motd" class="menu-item">MOTD</a>
+            <a href="#players" class="menu-item">Players</a>
+        </div>
+
+        <div class="wrapper">
+            <div class="motd">
+                <h2 class="motd-header" id="motd">MOTD</h2>
+                <div class="motd-body">
+                    <img src="" alt="Favicon" class="favicon" />
+                    <div class="text">
+                        <div class="top">
+                            <div class="name">Minecraft Server</div>
+                            <div class="ping">
+                                <div class="description"></div>
+                                <!-- <div class="icon pinging"></div> -->
+                            </div>
+                        </div>
+                        <div class="description">...</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="players">
+                <h2 class="players-header" id="players">Players</h2>
+                <div class="players-online">
+                    <div class="player"></div>
+                </div>
+                <div class="players-offline"></div>
+            </div>
+        </div>
+
+        <!-- <script src="/static/scripts/motd.js"></script> -->
+    </body>
+</html>

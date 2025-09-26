@@ -1,0 +1,77 @@
+@keyframes snake {
+    0% {
+        background-size:
+            0% var(--snake-thickness),
+            0% var(--snake-thickness);
+    }
+
+    10% {
+        background-size:
+            100% var(--snake-thickness),
+            0% var(--snake-thickness);
+    }
+
+    20% {
+        background-size:
+            0% var(--snake-thickness),
+            0% var(--snake-thickness);
+    }
+
+    30% {
+        background-size:
+            var(--snake-thickness) 100%,
+            0% var(--snake-thickness);
+    }
+
+    40% {
+        background-size:
+            0% var(--snake-thickness),
+            0% var(--snake-thickness);
+    }
+
+    50% {
+        background-size:
+            0% var(--snake-thickness),
+            100% var(--snake-thickness);
+    }
+
+    60% {
+        background-size:
+            0% var(--snake-thickness),
+            0% var(--snake-thickness);
+    }
+
+    70% {
+        background-size:
+            0% var(--snake-thickness),
+            var(--snake-thickness) 100%;
+    }
+
+    80% {
+        background-size:
+            0% var(--snake-thickness),
+            0% var(--snake-thickness);
+    }
+}
+
+.loading {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+
+    --snake-color: var(--text);
+    --snake-thickness: 1dvh;
+    --snake-speed: 10s;
+
+    background:
+        linear-gradient(var(--snake-color), var(--snake-color)) top left,
+        linear-gradient(var(--snake-color), var(--snake-color)) top right,
+        linear-gradient(var(--snake-color), var(--snake-color)) bottom right,
+        linear-gradient(var(--snake-color), var(--snake-color)) bottom left;
+    background-size: 0 var(--snake-thickness), var(--snake-thickness) 0;
+    background-repeat: no-repeat;
+    background-origin: border-box;
+    background-position: top left, top right, bottom right, bottom left;
+
+    animation: snake var(--snake-speed) ease infinite;
+}

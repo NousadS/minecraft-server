@@ -1,0 +1,136 @@
+@keyframes player-fade-in {
+    from {
+        transform: translateY(-20%);
+        filter: blur(1px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0%);
+        filter: blur(0px);
+        opacity: 1;
+    }
+}
+
+.player-list {
+    width: 98%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2dvh 2.5dvw;
+
+    padding: 2dvh 0dvw;
+}
+
+.player {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    width: 40dvw;
+    aspect-ratio: 10/1;
+    padding: 1dvw;
+    border: var(--border-style);
+    border-radius: 1dvw;
+    background-color: var(--bg);
+    column-gap: 1dvw;
+    animation: player-fade-in 0.8s ease forwards;
+    opacity: 0;
+    z-index: 0;
+}
+
+@media (max-width: 1000px) {
+    .player {
+        width: 90dvw;
+        border-radius: 3dvw;
+    }
+}
+
+.player[data-status=offline] {
+    border-color: var(--border-muted);
+}
+
+.player .tag,
+.player .button {
+    font-size: 0.8em;
+}
+
+.head {
+    grid-column: 1;
+    grid-row: 1 / span 3;
+    aspect-ratio: 1/1;
+    image-rendering: pixelated;
+    height: 100%;
+    border-radius: 1dvw;
+    transition: filter 1s ease, border-radius 1s ease, transform 0.5s ease;
+}
+
+@media (max-width: 500px) {
+    .head {
+        border-radius: 2dvw;
+    }
+}
+
+.head[data-status=offline] {
+    filter: grayscale();
+}
+
+.head:active {
+    border-radius: 0.2dvw;
+    transform: scale(1.8);
+}
+
+
+.name {
+    grid-column: 2;
+    grid-row: 1;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 5%;
+}
+
+.name .tag {
+    transition: opacity 1s ease;
+}
+
+.name[data-status=offline] .tag {
+    opacity: 0;
+}
+
+.status {
+    grid-column: 3;
+    grid-row: 1;
+    color: var(--green);
+    text-align: right;
+    transition: opacity 1s ease;
+}
+
+.status[data-status=offline] {
+    color: var(--text-muted);
+}
+
+.status .icon {
+    aspect-ratio: 1 / 1;
+    font-size: 0.3em;
+    vertical-align: middle;
+}
+
+.description {
+    grid-column: 2 / span 2;
+    grid-row: 2;
+    color: var(--text-muted);
+}
+
+.buttons {
+    grid-column: 2 / span 2;
+    grid-row: 3;
+}

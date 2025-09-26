@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+
+:root {
+    --primary: #00a9a9;
+    --secondary: #089191;
+
+    --transparent: #00000000;
+    --white: #ffffff;
+    --black: #000000;
+
+    --text: #ffffff;
+    --text-muted: #b3b3b3;
+
+    --border: #636363;
+    --border-highlight: #484848;
+    --border-muted: #2e2e2e;
+
+    --bg-dark: #0d0d0d;
+    --bg: #1a1a1a;
+    --bg-light: #262626;
+
+    --danger: #cc6666;
+    --warning: #cccc66;
+    --success: #66cc66;
+    --info: #8c8cd8;
+
+    --font-style: "Rethink Sans", sans-serif;
+    --border-style: 1px var(--border) solid;
+    --shadow-style: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+}
+
+body {
+    scroll-behavior: smooth;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    font-family: var(--font-style);
+    color: var(--text);
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.wrapper {
+    width: 100dvw;
+    min-height: 100dvh;
+
+    padding-top: 10dvh;
+
+    overflow: hidden;
+
+    background-color: var(--bg-dark);
+}
+
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100dvw;
+    height: 10dvh;
+
+    background-color: #1a1a1a8e;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    >.menu-item {
+        font-size: 1.4em;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--text);
+
+        --background-exposure: 0%;
+
+        background:
+            linear-gradient(to right, var(--transparent)),
+            linear-gradient(to right, var(--text-muted));
+        background-size: calc(100% - var(--background-exposure)) 0.1em, var(--background-exposure) 0.1em;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+    }
+}

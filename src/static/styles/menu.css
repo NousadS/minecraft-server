@@ -1,0 +1,54 @@
+.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100dvw;
+    height: 10dvh;
+
+    z-index: 1;
+
+    background-color: rgb(var(--bg-rgb), 0.5);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+
+    border-bottom: 2px solid rgb(var(--border-muted-rgb), 0.5);
+
+    transition: background-color 1s ease, border-bottom 1s ease, backdrop-filter 1s ease,
+        -webkit-backdrop-filter 1s ease;
+
+    >.menu-item {
+        font-size: 1.4em;
+        font-weight: bold;
+        text-decoration: none;
+        color: var(--text);
+
+        --background-exposure: 0%;
+
+        background:
+            linear-gradient(to right, var(--transparent)),
+            linear-gradient(to right, var(--text-muted));
+        background-size: calc(100% - var(--background-exposure)) 0.1em, var(--background-exposure) 0.1em;
+        background-position: 100% 100%, 0 100%;
+        background-repeat: no-repeat;
+        transition: background-size 400ms;
+    }
+
+    >.menu-item:hover {
+        --background-exposure: 100%;
+    }
+}
+
+.menu.on-top {
+    background-color: var(--transparent);
+    border-bottom: 2px solid var(--transparent);
+
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+}

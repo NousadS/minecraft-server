@@ -1,0 +1,26 @@
+body {
+    scroll-behavior: smooth;
+
+    margin: 0;
+    padding: 0;
+
+    overflow-x: hidden;
+
+    font-family: var(--font-style);
+    color: var(--text);
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+.wrapper {
+    width: 100dvw;
+    min-height: 90dvh;
+
+    padding-top: 10dvh;
+
+    overflow: hidden;
+
+    background-color: var(--bg-dark);
+}

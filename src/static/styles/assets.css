@@ -1,0 +1,50 @@
+@import url("https://fonts.googleapis.com/css2?family=Rethink+Sans:ital,wght@0,400..800;1,400..800&display=swap");
+@import url("https://www.nerdfonts.com/assets/css/webfont.css");
+
+:root {
+    /* Basic colors (HEX) */
+    --transparent: #00000000;
+    --white: #ffffff;
+    --black: #000000;
+
+    --text: #ffffff;
+    --text-muted: #b3b3b3;
+
+    --border: #636363;
+    --border-highlight: #484848;
+    --border-muted: #2e2e2e;
+
+    --bg-dark: #0d0d0d;
+    --bg: #1a1a1a;
+    --bg-light: #262626;
+
+    --red: #cc6666;
+    --yellow: #cccc66;
+    --green: #66cc66;
+    --blue: #8c8cd8;
+
+    /* Basic colors (RGB without function) */
+
+    --white-rgb: 255, 255, 255;
+    --black-rgb: 0, 0, 0;
+
+    --text-rgb: 255, 255, 255;
+    --text-muted-rgb: 179, 179, 179;
+
+    --border-rgb: 99, 99, 99;
+    --border-highlight-rgb: 72, 72, 72;
+    --border-muted-rgb: 46, 46, 46;
+
+    --bg-dark-rgb: 13, 13, 13;
+    --bg-rgb: 26, 26, 26;
+    --bg-light-rgb: 38, 38, 38;
+
+    --red-rgb: 204, 102, 102;
+    --yellow-rgb: 204, 204, 102;
+    --green-rgb: 102, 204, 102;
+    --blue-rgb: 140, 140, 216;
+
+    --font-style: "Rethink Sans", sans-serif;
+    --border-style: 1px var(--border) solid;
+    --shadow-style: 0px 4px 4px #00000030, 0px 12px 12px #00000015;
+}

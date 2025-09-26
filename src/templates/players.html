@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block head %}
+<link rel="stylesheet" href="/static/styles/players.css" />
+{% endblock %}
+
+{% block title %} | Players{% endblock %}
+
+{% block body %}
+<div class="player-list">
+    <div class="loading"></div>
+</div>
+
+<template id="player-template">
+    <div class="player">
+        <img
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAA7UlEQVR4nDXBvy8DUQDA8e979+6HJ6qD9EQ0lfgD/ANmkVjthg4Gf4JYTMRmoIN0FouhBpbGn2AykFTRlA6XS5rjcr337pl8PmJjbcGZCpSQFNZgjEVKia88nANlKgAwrmI+ClgMBBaPJCuwzqIAzg72CP2AuahG/jMFT5J+jzm5vUfcHO07HQb8FgWeF5JOU1pxg/fhCwBShwE7h+dcP64TlTNacYPLu5j2RY/a0griqr3l4uVVVFin1+8DsLu9yejjlcEkQWal5XM04LTboak1Ta057nRJshyBj3r7mlBVDoCH5yf+ZbmlKGf8Abs0WXs4UrwAAAAAAElFTkSuQmCC"
+            alt="Player's head"
+            class="head"
+        />
+        <div class="name">
+            Steve
+            <div class="tag gray">
+                <img class="icon" src="/static/images/icons/minecraft.png" />
+                Unknown
+            </div>
+        </div>
+        <div class="status"><i class="icon nf nf-cod-circle"></i> Unknown</div>
+        <div class="description"></div>
+        <div class="buttons">
+            <a class="button yellow to-buildings" href="#">
+                <i class="icon nf nf-fa-search"></i> Buildings
+            </a>
+        </div>
+    </div>
+</template>
+
+<script src="/static/scripts/players.js"></script>
+{% endblock %}

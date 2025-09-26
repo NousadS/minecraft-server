@@ -1,0 +1,135 @@
+.button {
+    --button-color: var(--text);
+    --button-color-rgb: var(--text-rgb);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    min-width: 2dvw;
+    width: fit-content;
+    height: fit-content;
+
+    padding: 0% 4%;
+
+    border: var(--border-style);
+    border-color: var(--button-color);
+    border-radius: 0.5dvw;
+
+    color: var(--button-color);
+    background: rgb(var(--button-color-rgb), 0.2);
+
+    font-weight: normal;
+
+    cursor: pointer;
+    user-select: none;
+
+    text-decoration: none;
+
+    transition:
+        background 0.5s ease,
+        min-width 0.5s ease,
+        transform 0.5s ease;
+}
+
+.button .icon {
+    width: 0dvw;
+    overflow: hidden;
+
+    color: var(--button-color);
+
+    transition: width 0.5s ease;
+}
+
+.button img.icon {
+    height: 90%;
+    aspect-ratio: 1 / 1;
+
+    margin-right: 2%;
+
+    overflow: visible;
+}
+
+.button i.icon {
+    font-size: 0.6em;
+    vertical-align: middle;
+}
+
+.button:hover {
+    background: rgb(var(--button-color-rgb), 0.5);
+}
+
+.button:active {
+    transform: scale(1.2);
+}
+
+.button:hover .icon {
+    width: 1dvw;
+    overflow: visible;
+}
+
+@media (max-width: 750px) {
+    .button {
+        padding: 0% 4%;
+
+        border-radius: 1dvh;
+    }
+
+    .button .icon {
+        width: 0dvw;
+        overflow: hidden;
+
+        color: var(--button-color);
+
+        transition: width 0.5s ease;
+    }
+
+    .button img.icon {
+        height: 90%;
+        aspect-ratio: 1 / 1;
+
+        margin-right: 2%;
+
+        overflow: visible;
+    }
+
+    .button i.icon {
+        font-size: 0.6em;
+        vertical-align: middle;
+    }
+
+    .button:hover {
+        background: rgb(var(--button-color-rgb), 0.5);
+    }
+
+    .button:active {
+        transform: scale(1.2);
+    }
+
+    .button:hover .icon {
+        width: 1dvw;
+        overflow: visible;
+    }
+}
+
+/* Colors */
+
+.button.red {
+    --button-color: var(--red);
+    --button-color-rgb: var(--red-rgb);
+}
+
+.button.yellow {
+    --button-color: var(--yellow);
+    --button-color-rgb: var(--yellow-rgb);
+}
+
+.button.green {
+    --button-color: var(--green);
+    --button-color-rgb: var(--green-rgb);
+}
+
+.button.blue {
+    --button-color: var(--blue);
+    --button-color-rgb: var(--blue-rgb);
+}

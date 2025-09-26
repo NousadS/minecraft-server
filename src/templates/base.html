@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+        <link rel="stylesheet" href="/static/styles/assets.css">
+        <link rel="stylesheet" href="/static/styles/wrapper.css">
+
+        <link rel="stylesheet" href="/static/styles/tags.css">
+        <link rel="stylesheet" href="/static/styles/buttons.css">
+
+        <link rel="stylesheet" href="/static/styles/menu.css">
+        <link rel="stylesheet" href="/static/styles/loading.css">
+
+        {% block head %}{% endblock %}
+
+        <title>Server Keeper {% block title %}{% endblock %}</title>
+    </head>
+    <body>
+        <div id="menu" class="menu">
+            <a href="/server" class="menu-item">Server</a>
+            <a href="/players" class="menu-item">Players</a>
+            <a href="/map" class="menu-item">Map</a>
+            <a href="/sites" class="menu-item">Sites</a>
+
+            <script src="/static/scripts/menu.js"></script>
+        </div>
+        
+        <div id="wrapper" class="wrapper">
+            {% block body %}{% endblock %}
+        </div>
+
+        <div id="footer" class="footer"></div>
+    </body>
+</html>
