@@ -3,7 +3,7 @@
         "type": "spawn",
         "marker": {
             "x": 0,
-            "y": 0,
+            "z": 0,
             "dimension": "overworld"
         },
         "name": "Spawn / Overworld",
