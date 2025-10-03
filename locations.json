@@ -1,1 +1,16 @@
-[]
+[
+    {
+        "type": "spawn",
+        "marker": {
+            "x": 0,
+            "y": 0,
+            "dimension": "overworld"
+        },
+        "name": "Spawn / Overworld",
+        "photos": 0,
+        "tags": [],
+        "builders": [
+            "Nousad"
+        ]
+    }
+]
