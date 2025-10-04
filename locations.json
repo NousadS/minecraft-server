@@ -3,7 +3,7 @@
         "type": "creeper_farm",
         "marker": {
             "x": 1465,
-            "z": 3865,
+            "z": 245,
             "dimension": "overworld"
         },
         "name": "Creeper Farm",
@@ -20,7 +20,7 @@
         "type": "guardian_farm",
         "marker": {
             "x": 1290,
-            "z": 2900,
+            "z": 1190,
             "dimension": "overworld"
         },
         "name": "Guardian Farm",
@@ -37,7 +37,7 @@
         "type": "raid_farm",
         "marker": {
             "x": 120,
-            "z": 3990,
+            "z": 100,
             "dimension": "overworld"
         },
         "name": "Raid Farm",
