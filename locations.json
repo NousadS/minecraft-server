@@ -7,8 +7,12 @@
             "dimension": "overworld"
         },
         "name": "Spawn / Overworld",
-        "photos": 0,
-        "tags": [],
+        "photos": 2,
+        "tags": [
+            "hidden",
+            "public",
+            "building"
+        ],
         "builders": [
             "Nousad"
         ]
