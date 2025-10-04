@@ -1,20 +1,53 @@
 [
     {
-        "type": "spawn",
+        "type": "creeper_farm",
         "marker": {
-            "x": 0,
-            "z": 0,
+            "x": 1465,
+            "z": 3865,
             "dimension": "overworld"
         },
-        "name": "Spawn / Overworld",
+        "name": "Creeper Farm",
         "photos": 2,
         "tags": [
-            "hidden",
             "public",
-            "building"
+            "farm"
         ],
         "builders": [
             "Nousad"
+        ]
+    },
+    {
+        "type": "guardian_farm",
+        "marker": {
+            "x": 1290,
+            "z": 2900,
+            "dimension": "overworld"
+        },
+        "name": "Guardian Farm",
+        "photos": 0,
+        "tags": [
+            "unknown",
+            "farm"
+        ],
+        "builders": [
+            "FlabyLP"
+        ]
+    },
+    {
+        "type": "raid_farm",
+        "marker": {
+            "x": 120,
+            "z": 3990,
+            "dimension": "overworld"
+        },
+        "name": "Raid Farm",
+        "photos": 0,
+        "tags": [
+            "private",
+            "farm"
+        ],
+        "builders": [
+            ".whitebengal9339"
         ]
     }
 ]
