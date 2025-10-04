@@ -49,5 +49,17 @@
         "builders": [
             ".whitebengal9339"
         ]
+    },
+    {
+        "type": "structure",
+        "marker": {
+            "x": -787,
+            "z": 2268,
+            "dimension": "overworld"
+        },
+        "name": "End Portal",
+        "photos": 0,
+        "tags": [],
+        "builders": []
     }
 ]
