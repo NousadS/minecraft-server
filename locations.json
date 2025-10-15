@@ -1,11 +1,9 @@
 [
     {
         "type": "creeper_farm",
-        "marker": {
-            "x": 1465,
-            "z": 245,
-            "dimension": "overworld"
-        },
+        "x": 1465,
+        "z": 245,
+        "dimension": "overworld",
         "name": "Creeper Farm",
         "photos": 2,
         "tags": [
@@ -18,11 +16,9 @@
     },
     {
         "type": "guardian_farm",
-        "marker": {
-            "x": 1290,
-            "z": 1190,
-            "dimension": "overworld"
-        },
+        "x": 1290,
+        "z": 1190,
+        "dimension": "overworld",
         "name": "Guardian Farm",
         "photos": 0,
         "tags": [
@@ -35,11 +31,9 @@
     },
     {
         "type": "raid_farm",
-        "marker": {
-            "x": 120,
-            "z": 100,
-            "dimension": "overworld"
-        },
+        "x": 120,
+        "z": 100,
+        "dimension": "overworld",
         "name": "Raid Farm",
         "photos": 0,
         "tags": [
@@ -52,11 +46,9 @@
     },
     {
         "type": "structure",
-        "marker": {
-            "x": -787,
-            "z": 2268,
-            "dimension": "overworld"
-        },
+        "x": -787,
+        "z": 2268,
+        "dimension": "overworld",
         "name": "End Portal",
         "photos": 0,
         "tags": [],
